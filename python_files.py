@@ -1,5 +1,6 @@
 # Reading files
 import sys
+
 path = "C:/Users/ACER/Desktop/Practice_R/sdata.txt"
 
 try:
@@ -18,8 +19,6 @@ fileObj = open(path, "r")
 for line in fileObj:
     print(line)
 """
-
-
 
 """
 fh2 = open(path, "r")
@@ -44,6 +43,38 @@ with open(path, "r") as obj:
 
 '''
 
-name1 = sys.argv[0]
-print("The name: ", name1)
+fh = open("./mydata/chromoData.tsv")
+
+values = []
+allRows = []
+positions = []
+header = fh.readline()
+
+for line in fh:
+    data = line.split()
+    chromosome, position, value = data
+    position = int(position)
+    value = float(value)
+
+    positions.append(position)
+    values.append(value)
+    eachRow = [chromosome, position, value]
+    allRows.append(eachRow)
+
+print(values)
+print(positions)
+print(allRows)
+
+# Means
+valueMean = sum(values) / len(values)
+positionMean = sum(positions) / len(positions)
+
+# Maximum
+maxValue = max(values)
+maxPosition = max(positions)
+
+print(f"Mean values: {valueMean}")
+print(f"Mean of positions: {positionMean}")
+print(f"Maximum value: {maxValue}")
+print(f"Maximum position: {maxPosition}")
 
