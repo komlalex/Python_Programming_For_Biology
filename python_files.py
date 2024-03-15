@@ -78,3 +78,55 @@ print(f"Mean of positions: {positionMean}")
 print(f"Maximum value: {maxValue}")
 print(f"Maximum position: {maxPosition}")
 
+
+# Reading FASTA-format Files
+
+def readFastaFile(fileName):
+    try:
+        fh = open(fileName, "r")
+        sequences = []
+        seqFragments = []
+
+        for line in fh:
+            if line.startswith(">"):
+                # found start of the next sequence
+                if seqFragments:
+                    sequence = "".join(seqFragments)
+                    sequences.append(sequence)
+                    seqFragments = []
+            else:
+                # found more of existing sequence
+                seq = line.rstrip()  # remove newline character
+                seqFragments.append(seq)
+
+        if seqFragments:
+            # should be the case if file is not empty
+            sequence = "".join(seqFragments)
+
+        fh.close()
+        return sequences
+    except IOError as ioerror:
+        print(ioerror)
+
+
+# Alternatively
+
+def readFastaFile2(fileName):
+
+    fileObj = open(fileName, "r")
+    sequences = []
+    seq = ""
+
+    for line in fileObj:
+        if line.startswith(">"):
+            if seq:
+                sequences.append(seq)
+            seq = ""
+        else:
+            seq += line.rstrip()
+    if seq:
+        sequences.append(seq)
+
+    fileObj.close()
+    return sequences
+
