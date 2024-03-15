@@ -1,6 +1,6 @@
 # Reading files
 import sys
-
+import os
 path = "C:/Users/ACER/Desktop/Practice_R/sdata.txt"
 
 try:
@@ -129,4 +129,37 @@ def readFastaFile2(fileName):
 
     fileObj.close()
     return sequences
+
+"""
+if os.path.exists("./mydata/chromoData.tsv"):
+    print("Yayyyy: File exists")
+
+"""
+
+# Reading PDB Files
+def calcCentroid(pdbFile):
+    fileObj = open(pdbFile, "r")
+    natoms = 0
+    xsum = ysum = zsum = 0
+
+    for line in fileObj:
+        if line[:6] == "ATOM  ":
+            natoms += 1
+
+            x = float(line[30:38])
+            y = float(line[38:46])
+            z = float(line[46:54])
+
+            xsum += x
+            ysum += y
+            zsum += z
+            fileObj.close()
+        if natoms == 0:
+            xavg = yavg = zavg = 0
+        else:
+            xavg = xsum / natoms
+            yavg = ysum / natoms
+            zavg = zsum / natoms
+
+        return (natoms, xavg, yavg, zavg)
 
