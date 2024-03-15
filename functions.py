@@ -55,3 +55,19 @@ def testFunc(item, *args, **kw):
 
 testFunc("Hello", 1, 99, valueA="abc", valueB="7.0")
 
+KILOS_PER_POUND = 0.45359237
+
+
+def poundsToKilos(pounds):
+    kilos = pounds * KILOS_PER_POUND
+    return kilos
+
+
+def kilosToPounds(kilos):
+    pounds = kilos / KILOS_PER_POUND
+    return pounds
+
+# Lambda functions
+cube = lambda x: x*x*x
+
+print(cube(3))
