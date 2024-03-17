@@ -1,6 +1,7 @@
 # Reading files
 import sys
 import os
+
 path = "C:/Users/ACER/Desktop/Practice_R/sdata.txt"
 
 try:
@@ -112,7 +113,6 @@ def readFastaFile(fileName):
 # Alternatively
 
 def readFastaFile2(fileName):
-
     fileObj = open(fileName, "r")
     sequences = []
     seq = ""
@@ -130,11 +130,13 @@ def readFastaFile2(fileName):
     fileObj.close()
     return sequences
 
+
 """
 if os.path.exists("./mydata/chromoData.tsv"):
     print("Yayyyy: File exists")
 
 """
+
 
 # Reading PDB Files
 def calcCentroid(pdbFile):
@@ -163,3 +165,20 @@ def calcCentroid(pdbFile):
 
         return (natoms, xavg, yavg, zavg)
 
+
+# WRITING A FILE
+
+
+
+if os.path.exists("./mydata/output.txt"):
+    print("Already exists")
+else:
+    fh = open("./mydata/output.txt", "w")
+    fh.write("I was just written!!!")
+    fh.close()
+
+fh = open("./mydata/output.txt", "a")
+fh.write(" Appended!!!")
+
+print(os.getcwd())
+print(os.path.split("./mydata/output.txt"))

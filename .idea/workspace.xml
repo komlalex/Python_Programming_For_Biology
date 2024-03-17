@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0362423-d93f-4324-a807-a23b27ebe963" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pickling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_files.py" afterDir="false" />
     </list>
@@ -35,6 +36,7 @@
     "Python.functions.executor": "Run",
     "Python.importing.executor": "Run",
     "Python.intro.executor": "Run",
+    "Python.pickling.executor": "Run",
     "Python.practice.executor": "Run",
     "Python.python_files.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
