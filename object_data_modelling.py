@@ -112,3 +112,66 @@ class Atom:
     def delete(self):
         del self.residue.atomDict[self.name]
         self.residue.atoms.remove(self)
+
+
+def getStructuresFromFile(fileName):
+    fileObject = open(fileName)
+    structure = None
+    name = "unknown"
+    pdbId = None
+    conformation = 0
+    structures = []
+
+    for line in fileObject:
+        record = line[0:6].strip()
+        if record == "HEADER":
+            pdbId = line.split()[-1]
+        elif record == "TITLE":
+            name = line[10:].strip()
+        elif record == "MODEL":
+            conformation = int(line[10:14])
+        elif record == "ENDML":
+            structure = None
+        elif record == 'ATOM':
+            serial = int(line[6:11])
+            atomName = line[12:16].strip()
+            resName = line[17:20].strip()
+            chainCode = line[21:26].strip()
+            seqId = int(line[22:26])
+            x = float(line[30:38])
+            y = float(line[38:46])
+            z = float(line[46:54])
+            segment = line[72:76].strip()
+            element = line[76:78].strip()
+
+            if chainCode == "":
+                if segment:
+                    chainCode = segment
+                else:
+                    chainCode = "A"
+            if not structure:
+                structure = Structure(name, conformation, pdbId)
+                structures.append(structure)
+            chain = structure.getChain(chainCode)
+            if not chain:
+                chain = Chain(structure, chainCode)
+
+            residue = chain.getResidue(seqId)
+            if not residue:
+                residue = Residue(chain, seqId, resName)
+
+            if not element:
+                element = name[0]
+                coords = (x, y, z)
+                atom = Atom(residue, atomName, coords, element)
+
+        fileObject.close()
+        return structures
+
+    testStructs = getStructuresFromFile("./mydata/2kpf.pdb")
+
+    structure = testStructs[0]
+    chain = structure.getChain("A")
+
+    for residue in chain.residues:
+        print(residue.seqId, residue.code)
