@@ -1,4 +1,4 @@
-from math import sin, cos, degrees, radians, atan2
+from math import sin, cos, degrees, radians, atan2, floor, ceil
 
 """
 x = 50
@@ -42,3 +42,10 @@ def meanAngle(angles, inDegrees=True):
 angles2 = [100, 150, 150, 70, 90, 160]
 meanAng = meanAngle(angles2)
 print(meanAng)
+
+# Rounding
+y = floor(5.25)
+print(ceil(5.25))
+print(type(y))
+
+print(round(9631, -2))
