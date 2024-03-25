@@ -31,5 +31,12 @@ valsB = [gauss(0.0, 1.0) for x in valsA]
 #pyplot.show()
 
 # Histogram
-pyplot.hist(valsB, bins=20, range=(-2, 2.0))
+#pyplot.hist(valsB, bins=20, range=(-2, 2.0))
+#pyplot.show()
+
+# Pie chart
+sizes = [83, 8, 4, 5]
+labels = ["Arthropoda", "Mollusca", "Cordata", "Others"]
+colors = ["#B00000", "#D0D000", "#008000", "#4040FF"]
+pyplot.pie(sizes, labels=labels, colors=colors)
 pyplot.show()
