@@ -23,5 +23,13 @@ yVals = [100.0/x for x in range(1, 10)]
 
 valsA = range(100)
 valsB = [gauss(0.0, 1.0) for x in valsA]
-pyplot.scatter(valsA, valsB, s=40, marker="*")
+# pyplot.scatter(valsA, valsB, s=40, marker="*")
+# pyplot.show()
+
+# Bar chart
+#pyplot.bar(valsA, valsB, color="green")
+#pyplot.show()
+
+# Histogram
+pyplot.hist(valsB, bins=20, range=(-2, 2.0))
 pyplot.show()
