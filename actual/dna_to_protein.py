@@ -15,8 +15,17 @@ STANDARD_GENETIC_CODE = {
     'GAU': 'Asp', 'GAC': 'Asp', 'GGU': 'Gly', 'GGC': 'Gly',
     'GUA': 'Val', 'GUG': 'Val', 'GCA': 'Ala', 'GCG': 'Ala',
     'GAA': 'Glu', 'GAG': 'Glu', 'GGA': 'Gly', 'GGG': 'Gly'}
+ALLOWED_NUCLEOTIDES = ['A', 'T', 'G', 'C', 'U']
 
 dnaSeq = 'ATGGTGCATCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTG'
+
+
+def validateNucleotides(seq):
+    for nucleotide in seq:
+        if nucleotide not in ALLOWED_NUCLEOTIDES:
+            return None
+
+    return seq
 
 
 def proteinTranslation(seq, geneticCode):
@@ -27,6 +36,10 @@ def proteinTranslation(seq, geneticCode):
     :param geneticCode:
     :return:
     """
+    seq = validateNucleotides(seq)
+    if not seq:
+        raise Exception("Invalid DNA/RNA Sequence")
+
     seq = seq.replace("T", "U")  # Make sure we have RNA sequence
     proteinSeq = []
 

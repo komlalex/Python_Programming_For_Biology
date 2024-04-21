@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0362423-d93f-4324-a807-a23b27ebe963" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/numpy_package.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plotting.py" beforeDir="false" afterPath="$PROJECT_DIR$/plotting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actual/dna_to_protein.py" beforeDir="false" afterPath="$PROJECT_DIR$/actual/dna_to_protein.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +33,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.classes.executor": "Run",
     "Python.conditionals.executor": "Run",
+    "Python.dna_to_protein.executor": "Run",
     "Python.functions.executor": "Run",
     "Python.importing.executor": "Run",
     "Python.intro.executor": "Run",
