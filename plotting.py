@@ -38,5 +38,23 @@ valsB = [gauss(0.0, 1.0) for x in valsA]
 sizes = [83, 8, 4, 5]
 labels = ["Arthropoda", "Mollusca", "Cordata", "Others"]
 colors = ["#B00000", "#D0D000", "#008000", "#4040FF"]
-pyplot.pie(sizes, labels=labels, colors=colors)
-pyplot.show()
+#pyplot.pie(sizes, labels=labels, colors=colors)
+#pyplot.show()
+
+x = [[1,2,3], [4,5,6]]
+col = [y[2] for y in x]
+print(col)
+
+def transposeMatrix(x):
+    nrows = len(x)
+    ncols = len(x[0])
+
+    return [[x[n][m] for n in range(nrows)] for m in range(ncols)]
+
+x = [[1,7,3], [4,5,6]]
+y = transposeMatrix(x)
+print(y)
+
+v = 10 * [0]
+print(v)
+
