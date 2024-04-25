@@ -21,12 +21,11 @@ dnaSeq = 'ATGGTGCATCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTG'
 
 
 def validateNucleotides(seq):
+    i = 0
     for nucleotide in seq:
         if nucleotide not in ALLOWED_NUCLEOTIDES:
-            return None
-
-    return seq
-
+            raise Exception(f"Invalid nucleotide '{nucleotide}' at index {i}.")
+        i += 1
 
 def proteinTranslation(seq, geneticCode):
     """
@@ -36,9 +35,7 @@ def proteinTranslation(seq, geneticCode):
     :param geneticCode:
     :return:
     """
-    seq = validateNucleotides(seq)
-    if not seq:
-        raise Exception("Invalid DNA/RNA Sequence")
+    validateNucleotides(seq)
 
     seq = seq.replace("T", "U")  # Make sure we have RNA sequence
     proteinSeq = []

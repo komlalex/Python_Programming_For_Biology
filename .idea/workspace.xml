@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0362423-d93f-4324-a807-a23b27ebe963" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/actual/estimate_molecular_mass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actual/dna_to_protein.py" beforeDir="false" afterPath="$PROJECT_DIR$/actual/dna_to_protein.py" afterDir="false" />
     </list>
@@ -12,6 +13,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,6 +42,7 @@
     "Python.classes.executor": "Run",
     "Python.conditionals.executor": "Run",
     "Python.dna_to_protein.executor": "Run",
+    "Python.estimate_molecular_mass.executor": "Run",
     "Python.functions.executor": "Run",
     "Python.importing.executor": "Run",
     "Python.intro.executor": "Run",
