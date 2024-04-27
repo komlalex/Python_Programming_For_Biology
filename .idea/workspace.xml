@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0362423-d93f-4324-a807-a23b27ebe963" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/actual/proteinHydrophobicity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actual/gcContent.py" beforeDir="false" afterPath="$PROJECT_DIR$/actual/gcContent.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,7 @@
     "Python.pickling.executor": "Run",
     "Python.plotting.executor": "Run",
     "Python.practice.executor": "Run",
+    "Python.proteinHydrophobicity.executor": "Run",
     "Python.python_files.executor": "Run",
     "Python.reverseComplement.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
