@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0362423-d93f-4324-a807-a23b27ebe963" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/actual/measuringRepetitiveness.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actual/proteinIsoelectricPoint.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actual/trials.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,8 +56,10 @@
     "Python.plotting.executor": "Run",
     "Python.practice.executor": "Run",
     "Python.proteinHydrophobicity.executor": "Run",
+    "Python.proteinIsoelectricPoint.executor": "Run",
     "Python.python_files.executor": "Run",
     "Python.reverseComplement.executor": "Run",
+    "Python.trials.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
