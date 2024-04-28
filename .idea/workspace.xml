@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0362423-d93f-4324-a807-a23b27ebe963" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/actual/proteinIsoelectricPoint.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/actual/trials.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actual/readingFasterFilesWithBioPython.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actual/proteinIsoelectricPoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/actual/proteinIsoelectricPoint.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +58,7 @@
     "Python.proteinHydrophobicity.executor": "Run",
     "Python.proteinIsoelectricPoint.executor": "Run",
     "Python.python_files.executor": "Run",
+    "Python.readingFasterFilesWithBioPython.executor": "Run",
     "Python.reverseComplement.executor": "Run",
     "Python.trials.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",

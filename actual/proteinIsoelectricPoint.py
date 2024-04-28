@@ -1,3 +1,6 @@
+from Bio import SeqIO
+
+
 def estimateCharge(sequence, pH):
     """
     Using pKa values estimate the charge of a sequence of
@@ -57,8 +60,10 @@ def estimateIsoelectric(sequence):
                 increment *= -1
     return bestValue
 
-sequence = "HEYDHEYHEYYYDDDYRCRRCCCR"
 
-pI = estimateIsoelectric(sequence)
-print(pI)
+fileObj = open("collagen.fasta", "r")
 
+for protein in SeqIO.parse(fileObj, "fasta"):
+    print(protein.id)
+    pI = estimateIsoelectric(protein.seq)
+    print(pI)
