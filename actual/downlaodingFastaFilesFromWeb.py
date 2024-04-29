@@ -16,8 +16,10 @@ if os.path.exists("./HumanFMR1_Protein_Uniprot.fasta"):
     for protein in SeqIO.parse(fileObj, "fasta"):
         print(protein.id)
         print(protein.seq)
+        fileObj.close()
 
 
 fh = open("HumanFMR1_Protein_Uniprot.fasta", "r")
 for line in fh:
     print(line)
+    fh.close()
