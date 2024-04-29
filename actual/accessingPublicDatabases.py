@@ -1,5 +1,5 @@
 from Bio import Entrez, SeqIO, ExPASy
-
+"""
 Entrez.email = "kunalexander360@gmail.com"
 handle = Entrez.einfo()
 rec = Entrez.read(handle)
@@ -23,6 +23,20 @@ for rec in recs:
     print(rec.description)
     print(rec.seq)
     break
+
+
+"""
+
+Entrez.email = "kunalexander360@gmail.com"
+handle = Entrez.efetch(db="nucleotide", rettype="fasta", id="102465470")
+
+dnaObj = SeqIO.read(handle, "fasta")
+handle.close()
+
+print(dnaObj.id)
+print(dnaObj.description)
+print(dnaObj.seq)
+
 
 socketObj = ExPASy.get_sprot_raw("HBB_HUMAN")
 proteinObj = SeqIO.read(socketObj, "swiss")

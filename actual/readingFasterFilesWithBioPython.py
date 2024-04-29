@@ -29,4 +29,14 @@ for protein in SeqIO.parse(fj, "fasta"):
     print(protein.seq)
 
 
+fileObj = open("gene.fna", "r")
+
+for gene in SeqIO.parse(fileObj, "fasta"):
+    print(gene.id)
+    print(gene.name)
+    print(gene.description)
+    print(gene.seq)
+    print("\n")
+
+
 
