@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0362423-d93f-4324-a807-a23b27ebe963" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pairSeqAlignments/seqIdentity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pairSeqAlignments/seqSimilarity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pairSeqAlignments/substitutability.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actual/accessingPublicDatabases.py" beforeDir="false" afterPath="$PROJECT_DIR$/actual/accessingPublicDatabases.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actual/readingFasterFilesWithBioPython.py" beforeDir="false" afterPath="$PROJECT_DIR$/actual/readingFasterFilesWithBioPython.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +63,8 @@
     "Python.readingFasterFilesWithBioPython.executor": "Run",
     "Python.reverseComplement.executor": "Run",
     "Python.seqIdentity.executor": "Run",
+    "Python.seqSimilarity.executor": "Run",
+    "Python.substitutability.executor": "Run",
     "Python.trials.executor": "Run",
     "Python.writingFastaFiles.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
