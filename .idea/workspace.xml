@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0362423-d93f-4324-a807-a23b27ebe963" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/actual/readingFasterFilesWithBioPython.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/actual/writingFastaFiles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actual/proteinIsoelectricPoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/actual/proteinIsoelectricPoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actual/dna_to_protein.py" beforeDir="false" afterPath="$PROJECT_DIR$/actual/dna_to_protein.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actual/estimate_molecular_mass.py" beforeDir="false" afterPath="$PROJECT_DIR$/actual/estimate_molecular_mass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actual/readingFasterFilesWithBioPython.py" beforeDir="false" afterPath="$PROJECT_DIR$/actual/readingFasterFilesWithBioPython.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +63,7 @@
     "Python.readingFasterFilesWithBioPython.executor": "Run",
     "Python.reverseComplement.executor": "Run",
     "Python.trials.executor": "Run",
+    "Python.writingFastaFiles.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"

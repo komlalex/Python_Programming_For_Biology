@@ -1,3 +1,4 @@
+from Bio import SeqIO
 def estimateMolecularMass(seq, molType="protein"):
     """
     Calculate the molecular weight of a biological sequence
@@ -28,12 +29,8 @@ def estimateMolecularMass(seq, molType="protein"):
     return molMass
 
 
-proteinSeq = "IRTNGTHMQPLLKLMKFQKFLLELFTLQKRKPEKGYNLPIISLNQ"
+fileObj = open("collagen2.fasta", "r")
 
-proteinMass = estimateMolecularMass(proteinSeq, "protein")
-print(proteinMass)
-
-dnaSeq = "ATTGCCAAATGGCCATCC"
-dnaMass = estimateMolecularMass(dnaSeq, "DNA")
-print(dnaMass)
-
+for gene in SeqIO.parse(fileObj, "fasta"):
+    mass = estimateMolecularMass(gene.seq)
+    print(mass)

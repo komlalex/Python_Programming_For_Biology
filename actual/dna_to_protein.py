@@ -1,3 +1,5 @@
+from Bio import SeqIO
+
 STANDARD_GENETIC_CODE = {
     'UUU': 'Phe', 'UUC': 'Phe', 'UCU': 'Ser', 'UCC': 'Ser',
     'UAU': 'Tyr', 'UAC': 'Tyr', 'UGU': 'Cys', 'UGC': 'Cys',
@@ -15,7 +17,7 @@ STANDARD_GENETIC_CODE = {
     'GAU': 'Asp', 'GAC': 'Asp', 'GGU': 'Gly', 'GGC': 'Gly',
     'GUA': 'Val', 'GUG': 'Val', 'GCA': 'Ala', 'GCG': 'Ala',
     'GAA': 'Glu', 'GAG': 'Glu', 'GGA': 'Gly', 'GGG': 'Gly'}
-ALLOWED_NUCLEOTIDES = ['A', 'T', 'G', 'C', 'U']
+ALLOWED_NUCLEOTIDES = ['A', 'T', 'G', 'C', 'U', 'N']
 
 dnaSeq = 'ATGGTGCATCTGACTCCTGAGGAGAAGTCTGCCGTTACTGCCCTGTGGGGCAAGGTG'
 
@@ -26,6 +28,7 @@ def validateNucleotides(seq):
         if nucleotide not in ALLOWED_NUCLEOTIDES:
             raise Exception(f"Invalid nucleotide '{nucleotide}' at index {i}.")
         i += 1
+
 
 def proteinTranslation(seq, geneticCode):
     """
@@ -56,6 +59,8 @@ def proteinTranslation(seq, geneticCode):
     return proteinSeq
 
 
-protein3LetterSeq = proteinTranslation(dnaSeq, STANDARD_GENETIC_CODE)
-
-print(protein3LetterSeq)
+fileObj = open("collagen2.fasta", "r")
+for gene in SeqIO.parse(fileObj, "fasta"):
+    print(gene.id)
+    protein = proteinTranslation(gene.seq, STANDARD_GENETIC_CODE)
+    print(protein)
