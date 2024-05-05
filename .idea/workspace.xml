@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0362423-d93f-4324-a807-a23b27ebe963" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pairSeqAlignments/seqSimilarity.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pairSeqAlignments/substitutability.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pairSeqAlignments/dynamicPairAlignment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +43,7 @@
     "Python.conditionals.executor": "Run",
     "Python.dna_to_protein.executor": "Run",
     "Python.downlaodingFastaFilesFromWeb.executor": "Run",
+    "Python.dynamicPairAlignment.executor": "Run",
     "Python.estimate_molecular_mass.executor": "Run",
     "Python.findingSequenceMotifs.executor": "Run",
     "Python.functions.executor": "Run",
